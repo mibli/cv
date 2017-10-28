@@ -1,0 +1,142 @@
+@page {
+    size: A4 portrait;
+    margin-top: 4cm;
+    margin-left: 3cm;
+    margin-bottom: 4cm;
+    margin-right: 3cm;
+}
+@media print {
+    body {
+        font-size: 1em;
+    }
+}
+
+#title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2em;
+}
+#title > .name {
+    display: block;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+#title > .profession {
+    text-align: center;
+    margin-bottom: 1em;
+}
+#title .contact {
+    display: table-row;
+}
+#title .contact > * {
+    text-align: center;
+    display: table-cell;
+    width: 33vw;
+}
+#title .contact > *::before {
+    font-weight: bold;
+}
+#title .contact .phone::before {
+    content: "Phone: ";
+}
+#title .contact .email::before {
+    content: "Email: ";
+}
+#title .contact .linkedin::before {
+    content: "LinkedIn: ";
+}
+
+
+#skills > div {
+    display: inline-block;
+    font-weight: bold;
+    min-width: 8em;
+    margin-right: 0.5em;
+}
+#skills > .skill-1::before {
+    margin-right: 0.2em;
+    content: "★☆☆";
+}
+#skills > .skill-2::before {
+    margin-right: 0.2em;
+    content: "★★☆";
+}
+#skills > .skill-3::before {
+    margin-right: 0.2em;
+    content: "★★★";
+}
+
+#experience .company {
+    font-weight: bold;
+}
+#experience .job {
+    text-decoration: underline;
+}
+#experience .job,
+#experience .period {
+    font-size: 0.9em;
+    display: inline-block;
+    width: 30vw;
+    margin-right: 0.5em;
+}
+#experience .keywords {
+    display: block;
+    margin-bottom: 0.7em;
+}
+#experience .keywords > span {
+    display: inline-block;
+    font-weight: bold;
+    min-width: 3em;
+    margin-right: 0.5em;
+    font-size: 0.8em;
+}
+
+#experience-full {
+    page-break-before: always;
+}
+#experience-full .description {
+    margin-top: 0.4em;
+    margin-bottom: 0.7em;
+}
+#experience-full .company {
+    font-weight: bold;
+}
+#experience-full .job {
+    text-decoration: underline;
+}
+#experience-full .job,
+#experience-full .period {
+    font-size: 0.9em;
+    display: inline-block;
+    width: 30vw;
+    margin-right: 0.5em;
+}
+#experience-full .description {
+    display: block;
+    margin-bottom: 1em;
+}
+#experience-full .description > h4 {
+    display: block;
+    margin-bottom: 0;
+}
+#experience-full .description > span.keyword {
+    font-weight: bold;
+}
+
+body > .section > h3 {
+    margin-top: 0px;
+    position: absolute;
+    left: -20vw;
+    width: 20vw;
+    font-size: 1em;
+}
+body > .section > p {
+    width: 66vw;
+}
+body > .section {
+    word-wrap: break-word;
+    position: relative;
+    left: 20%;
+    width: 80%;
+    page-break-inside: avoid;
+}
