@@ -11,6 +11,10 @@
     }
 }
 
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
 #title {
     text-align: center;
     width: 100%;
@@ -64,6 +68,24 @@
 #skills > .skill-3::before {
     margin-right: 0.2em;
     content: "★★★";
+}
+
+#education .university {
+    font-weight: bold;
+}
+#education .faculty {
+    display: block;
+    text-decoration: underline;
+}
+#education .degree {
+    display: inline-block;
+    margin-bottom: 0.7em;
+}
+#education > div > div {
+    font-size: 0.9em;
+    display: inline-block;
+    width: 30vw;
+    margin-right: 0.5em;
 }
 
 #experience .company {
@@ -139,4 +161,11 @@ body > .section {
     left: 20%;
     width: 80%;
     page-break-inside: avoid;
+}
+
+#clausule {
+    margin-top: 5em;
+    display: block;
+    font-size: x-small;
+    text-align: center;
 }
