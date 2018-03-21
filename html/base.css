@@ -50,6 +50,10 @@ body {
     content: "LinkedIn: ";
 }
 
+#title .contact .github::before {
+    content: "GitHub: ";
+}
+
 
 #skills > div {
     display: inline-block;
