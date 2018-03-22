@@ -65,12 +65,10 @@ body {
 #skills > div {
     display: inline-block;
     font-weight: normal;
-    min-width: 0em;
     margin-top: 0em;
     margin-bottom: 0em;
     line-height: 1em;
     margin-right: 1em;
-    min-width: 3em;
 }
 #skills > h4 {
     margin-bottom: 0.3em;
@@ -96,15 +94,25 @@ body {
 }
 
 #education .university {
+    display: inline-block;
     font-weight: bold;
 }
 #education .faculty {
-    display: block;
-    text-decoration: underline;
+    display: inline-block;
+    border-left: solid 1px;
+    padding-left: 0.3em;
+    margin-left: 0.3em;
+    /* text-decoration: underline; */
 }
 #education .degree {
     display: inline-block;
     margin-bottom: 0.7em;
+    border-left: solid 1px;
+    padding-left: 0.3em;
+    margin-left: 0.3em;
+}
+#education > div  {
+    display: inline-block;
 }
 #education > div > div {
     font-size: 0.9em;
