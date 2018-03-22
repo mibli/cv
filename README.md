@@ -12,4 +12,4 @@ Just follow the appropriate link below
 
 [Polish Version](https://rawgit.com/mibli/cv/master/html/pl.html)
 
-[English Version](https://rawgit.com/mibli/cv/master/html/en.html]
+[English Version](https://rawgit.com/mibli/cv/master/html/en.html)
