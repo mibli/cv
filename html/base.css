@@ -62,7 +62,22 @@ body {
 }
 
 
+#skills > div > h4 {
+    position: absolute;
+    top: 0px;
+    left: -20vw;
+    width: 20vw;
+    margin-top: 0px
+}
 #skills > div {
+    margin-left: 20vw;
+    position: relative;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+#skills .skill-1,
+#skills .skill-2,
+#skills .skill-3 {
     display: inline-block;
     font-weight: normal;
     margin-top: 0em;
@@ -70,26 +85,24 @@ body {
     line-height: 1em;
     margin-right: 1em;
 }
-#skills > h4 {
-    margin-bottom: 0.3em;
-    margin-top: 1em;
-}
-#skills > h4::after {
+#skills > div > h4::after {
     content: ":";
 }
-#skills > div::before {
+#skills .skill-1::before,
+#skills .skill-2::before,
+#skills .skill-3::before {
     /* margin-right: 0.2em; */
 }
-#skills > .skill-3 {
+#skills .skill-3 {
     font-weight: bold;
 }
-#skills > .skill-1::before {
+#skills .skill-1::before {
     /* content: "★☆☆"; */
 }
-#skills > .skill-2::before {
+#skills .skill-2::before {
     /* content: "★★☆"; */
 }
-#skills > .skill-3::before {
+#skills .skill-3::before {
     /* content: "★★★"; */
 }
 
