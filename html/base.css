@@ -110,13 +110,7 @@ body {
     display: inline-block;
     font-weight: bold;
 }
-#education .faculty {
-    display: inline-block;
-    border-left: solid 1px;
-    padding-left: 0.3em;
-    margin-left: 0.3em;
-    /* text-decoration: underline; */
-}
+#education .faculty,
 #education .degree {
     display: inline-block;
     margin-bottom: 0.7em;
@@ -127,10 +121,14 @@ body {
 #education > div  {
     display: inline-block;
 }
-#education > div > div {
+#education .period {
     font-size: 0.9em;
-    display: inline-block;
     width: 30vw;
+    left: 53.33vw;
+    top: 0px;
+    float: both;
+    position: absolute;
+    margin-top: 0px;
     margin-right: 0.5em;
 }
 
