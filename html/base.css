@@ -1,13 +1,18 @@
 @page {
     size: A4 portrait;
     margin-top: 4cm;
-    margin-left: 3cm;
+    margin-left: 4cm;
     margin-bottom: 4cm;
-    margin-right: 3cm;
+    margin-right: 4cm;
 }
 @media print {
     body {
-        font-size: 1em;
+        font-size: 0.98em;
+    }
+    #clausule {
+        position: absolute;
+        bottom: 0px;
+        width: 100vw;
     }
 }
 
