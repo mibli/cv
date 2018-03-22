@@ -121,18 +121,31 @@ body {
     margin-right: 0.5em;
 }
 
+#experience > div:first-of-type {
+    position: relative;
+}
 #experience .company {
+    display: inline-block;
     font-weight: bold;
+    font-size: 1.2em;
 }
 #experience .job {
-    text-decoration: underline;
+    width: 30vw;
+    border-left: solid 1px;
+    padding-left: 0.3em;
+    margin-left: 0.3em;
+    /* text-decoration: underline; */
 }
-#experience .company,
 #experience .job,
 #experience .period {
     font-size: 0.9em;
     display: inline-block;
-    width: 22vw;
+}
+#experience .period {
+    font-size: 0.9em;
+    float: both;
+    position: absolute;
+    left: 53.33vw;
     margin-right: 0.5em;
 }
 #experience .keywords {
@@ -146,45 +159,24 @@ body {
     margin-right: 0.5em;
     font-size: 0.8em;
 }
-
-/*
-#experience-full .company::nth-of-type(2) {
-    page-break-before: always;
-}
-*/
-#experience-full .description {
+#experience .description {
+    display: block;
+    margin-bottom: 1em;
     margin-top: 0.4em;
     margin-bottom: 0.7em;
 }
-#experience-full .company {
-    font-weight: bold;
-}
-#experience-full .job {
-    text-decoration: underline;
-}
-#experience-full .job,
-#experience-full .period {
-    font-size: 0.9em;
-    display: inline-block;
-    width: 30vw;
-    margin-right: 0.5em;
-}
-#experience-full .description {
-    display: block;
-    margin-bottom: 1em;
-}
-#experience-full .description > h4 {
+#experience .description > h4 {
     display: block;
     margin-bottom: 0;
 }
-#experience-full .description > span.keyword {
+#experience .description > span.keyword {
     font-weight: bold;
 }
-#experience-full .description > ul {
+#experience .description > ul {
     margin: 0.5em 0em;
     padding-left: 1.2em;
 }
-#experience-full .description > ul > li {
+#experience .description > ul > li {
     margin: 0;
     padding: 0;
 }
