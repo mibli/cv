@@ -16,26 +16,32 @@ body {
 }
 
 #title {
-    text-align: center;
+    text-align: left;
     width: 100%;
     margin-bottom: 2em;
+    margin-left: 20vw;
 }
 #title > .name {
-    display: block;
-    font-size: 2em;
+    display: inline-block;
+    font-size: 3em;
     text-transform: uppercase;
+    border-right: solid 1px !important;
+    padding-right: 0.3em;
+    margin-right: 0.3em;
 }
 #title > .profession {
+    font-size: 2.5em;
+    display: inline-block;
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 0.3em;
 }
 #title .contact {
     display: table-row;
 }
 #title .contact > * {
-    text-align: center;
+    text-align: left;
     display: table-cell;
-    width: 33vw;
+    padding-right: 1em;
 }
 #title .contact > *::before {
     font-family: 'Barlow Semi Condensed', sans-serif, "Font Awesome 5 Free", "Font Awesome 5 Brands";
@@ -45,7 +51,7 @@ body {
     content: " ";
 }
 #title .contact .email::before {
-    content: " ";
+    content: " ";
 }
 #title .contact .linkedin::before {
     content: " linkedin.com/in/";
