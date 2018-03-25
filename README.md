@@ -11,5 +11,4 @@ In qutebrowser use `print` command to print the PDF from the page.
 Just follow the appropriate link below
 
 [Polish Version](https://rawgit.com/mibli/cv/master/html/pl.html)
-
 [English Version](https://rawgit.com/mibli/cv/master/html/en.html)

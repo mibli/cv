@@ -17,7 +17,7 @@
 }
 
 body {
-    font-family: 'Barlow Semi Condensed', sans-serif, "Font Awesome 5 Free", "Font Awesome 5 Brands";
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 #title {
@@ -49,21 +49,26 @@ body {
     padding-right: 1em;
 }
 #title .contact > *::before {
-    font-family: 'Barlow Semi Condensed', sans-serif, "Font Awesome 5 Free", "Font Awesome 5 Brands";
+    padding-left: 1.3em;
+    background-position: left center !important;
     font-weight: normal;
 }
 #title .contact .phone::before {
-    content: " ";
+    background: url("../icons/phone.svg") no-repeat;
+    content: " ";
 }
 #title .contact .email::before {
-    content: " ";
+    background: url("../icons/envelope.svg") no-repeat;
+    content: " ";
 }
 #title .contact .linkedin::before {
-    content: " linkedin.com/in/";
+    background: url("../icons/linkedin.svg") no-repeat;
+    content: " linkedin.com/in/";
 }
 
 #title .contact .github::before {
-    content: " github.com/";
+    background: url("../icons/github.svg") no-repeat;
+    content: " github.com/";
 }
 
 
