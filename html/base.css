@@ -1,30 +1,37 @@
 @page {
     size: A4 portrait;
-    margin-top: 4cm;
-    margin-left: 4cm;
-    margin-bottom: 4cm;
-    margin-right: 4cm;
+    margin: 4cm;
 }
 @media print {
-    body {
-        font-size: 0.98em;
-    }
     #clausule {
         position: absolute;
         bottom: 0px;
-        width: 100vw;
     }
 }
 
+html {
+    margin: 0px;
+}
+
 body {
+    margin: 0px;
     font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.7vw;
+}
+
+body > * {
+    margin: auto;
+}
+
+#page {
+    margin: auto;
+    width: 90%;
 }
 
 #title {
     text-align: left;
-    width: 100%;
     margin-bottom: 2em;
-    margin-left: 20vw;
+    position: relative;
 }
 #title > .name {
     display: inline-block;
@@ -72,14 +79,14 @@ body {
 }
 
 
-#skills > div > h4 {
+#skills > .content > div > h4 {
     position: absolute;
     top: 0px;
     left: -20vw;
     width: 20vw;
     margin-top: 0px
 }
-#skills > div {
+#skills > .content > div {
     margin-left: 20vw;
     position: relative;
     margin-bottom: 0.3em;
@@ -95,7 +102,7 @@ body {
     line-height: 1em;
     margin-right: 1em;
 }
-#skills > div > h4::after {
+#skills > .content > div > h4::after {
     content: ":";
 }
 #skills .skill-1::before,
@@ -128,21 +135,21 @@ body {
     padding-left: 0.3em;
     margin-left: 0.3em;
 }
-#education > div  {
+#education > .content > div  {
     display: inline-block;
 }
 #education .period {
+    top: 0.1em;
     font-size: 0.9em;
     width: 30vw;
     left: 53.33vw;
-    top: 0px;
     float: both;
     position: absolute;
     margin-top: 0px;
     margin-right: 0.5em;
 }
 
-#experience > div:first-of-type {
+#experience > .content > div:first-of-type {
     position: relative;
 }
 #experience .company {
@@ -202,27 +209,74 @@ body {
     padding: 0;
 }
 
-body > .section > h3 {
+#page > .section > h3 {
     margin-top: 0px;
     position: absolute;
-    left: -20vw;
-    width: 20vw;
     font-size: 1em;
 }
-body > .section > p {
-    width: 66vw;
+
+#page > .section > .content {
     page-break-inside: avoid;
 }
-body > .section {
+
+#page > .section {
     word-wrap: break-word;
     position: relative;
-    left: 20%;
-    width: 80%;
 }
 
 #clausule {
+    margin: auto;
     margin-top: 5em;
     display: block;
     font-size: x-small;
     text-align: center;
+}
+
+/* English left pane */
+.en > #title {
+    left: calc(100% * 0.10);
+    width: calc(100% - 100% * 0.10);
+}
+.en > .section > h3 {
+    left: calc(100% / 0.90 * -0.10);
+    width: calc(100% / 0.90 * 0.10);
+}
+.en > .section {
+    left: calc(100% * 0.10);
+    width: calc(100% - 100% * 0.10);
+}
+.en > .section > .content {
+    width: calc(100% / 0.90 * (1 - 0.10));
+}
+/* Polish left pane */
+.pl > #title {
+    left: calc(100% * 0.12);
+    width: calc(100% - 100% * 0.12);
+}
+.pl > .section > h3 {
+    left: calc(100% / 0.90 * -0.12);
+    width: calc(100% / 0.90 * 0.12);
+}
+.pl > .section {
+    left: calc(100% * 0.12);
+    width: calc(100% - 100% * 0.12);
+}
+.pl > .section > .content {
+    width: calc(100% / 0.90 * (1 - 0.12));
+}
+# Highlight things
+.debug {
+    border: solid 1px magenta;
+}
+.debug > #title {
+    border: solid 1px blue;
+}
+.debug > .section > h3 {
+    border: solid 1px purple;
+}
+.debug > .section {
+    border: solid 1px pink;
+}
+.debug > .section > .content {
+    border: solid 1px green;
 }
