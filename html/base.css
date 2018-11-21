@@ -141,8 +141,8 @@ body > * {
 #education .period {
     top: 0.1em;
     font-size: 0.9em;
-    width: 30vw;
-    left: 53.33vw;
+    width: 30%;
+    left: calc(100% - 30%);
     float: both;
     position: absolute;
     margin-top: 0px;
@@ -173,7 +173,8 @@ body > * {
     font-size: 0.9em;
     float: both;
     position: absolute;
-    left: 53.33vw;
+    width: 30%;
+    left: calc(100% - 30%);
     margin-right: 0.5em;
 }
 #experience .keywords {
