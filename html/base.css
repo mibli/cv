@@ -235,34 +235,18 @@ body > * {
 
 /* English left pane */
 .en > #title {
-    left: calc(100% * 0.10);
-    width: calc(100% - 100% * 0.10);
-}
-.en > .section > h3 {
-    left: calc(100% / 0.90 * -0.10);
-    width: calc(100% / 0.90 * 0.10);
-}
-.en > .section {
-    left: calc(100% * 0.10);
-    width: calc(100% - 100% * 0.10);
-}
-.en > .section > .content {
-    width: calc(100% / 0.90 * (1 - 0.10));
-}
-/* Polish left pane */
-.pl > #title {
     left: calc(100% * 0.12);
     width: calc(100% - 100% * 0.12);
 }
-.pl > .section > h3 {
+.en > .section > h3 {
     left: calc(100% / 0.90 * -0.12);
     width: calc(100% / 0.90 * 0.12);
 }
-.pl > .section {
+.en > .section {
     left: calc(100% * 0.12);
     width: calc(100% - 100% * 0.12);
 }
-.pl > .section > .content {
+.en > .section > .content {
     width: calc(100% / 0.90 * (1 - 0.12));
 }
 # Highlight things
