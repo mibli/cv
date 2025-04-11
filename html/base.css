@@ -1,11 +1,14 @@
 @page {
     size: A4 portrait;
-    margin: 4cm;
+    margin-top: 1in;
+    margin-right: 0.5in;
+    margin-bottom: 1in;
+    margin-left: 0.5in;
 }
 @media print {
     #clausule {
-        position: absolute;
-        bottom: 0px;
+        position: fixed;
+        bottom: 0em;
     }
 }
 
@@ -21,6 +24,11 @@ body {
 
 body > * {
     margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #449
 }
 
 #page {
@@ -153,18 +161,23 @@ body > * {
     position: relative;
 }
 #experience .company {
-    display: inline-block;
-    font-weight: bold;
-    font-size: 1.2em;
-}
-#experience .job {
     width: 30vw;
     border-left: solid 1px;
     padding-left: 0.3em;
     margin-left: 0.3em;
+}
+#experience .job-header {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+#experience .job {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.2em;
     /* text-decoration: underline; */
 }
-#experience .job,
+#experience .company,
 #experience .period {
     font-size: 0.9em;
     display: inline-block;
@@ -239,6 +252,10 @@ body > * {
     margin-top: 0.3em;
     word-wrap: break-word;
     position: relative;
+}
+
+#hobby {
+    margin-bottom: 4em
 }
 
 #clausule {
